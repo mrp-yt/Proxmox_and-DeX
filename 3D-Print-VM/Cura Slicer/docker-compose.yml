@@ -1,1 +1,16 @@
 ---
+version "2.1"
+services:
+  cura-slicer:
+    image: mikeah/cura-novnc:latest
+    conbtainer_name: Cura Slicer
+    enviroment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/London
+    valumes:
+      - /path/to/folder:/config
+      - /path/to/stl-files:/print
+    ports:
+      - 8080:8080
+    restart: unless-stopped
