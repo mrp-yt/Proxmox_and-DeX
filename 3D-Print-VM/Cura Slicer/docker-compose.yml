@@ -1,7 +1,7 @@
 ---
 version "2.1"
 services:
-  cura-slicer:
+  curaslicer:
     image: mikeah/cura-novnc:latest
     conbtainer_name: Cura Slicer
     enviroment:
