@@ -3,12 +3,12 @@ version "2.1"
 services:
   curaslicer:
     image: mikeah/cura-novnc:latest
-    container_name: Cura Slicer
+    container_name: CuraSlicer
     enviroment:
       - PUID=1000
       - PGID=1000
       - TZ=Europe/London
-    valumes:
+    volumes:
       - /path/to/folder:/config
       - /path/to/stl-files:/print
     ports:
