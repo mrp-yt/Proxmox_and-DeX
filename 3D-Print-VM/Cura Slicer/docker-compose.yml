@@ -3,7 +3,7 @@ version "2.1"
 services:
   curaslicer:
     image: mikeah/cura-novnc:latest
-    conbtainer_name: Cura Slicer
+    container_name: Cura Slicer
     enviroment:
       - PUID=1000
       - PGID=1000
